@@ -433,3 +433,21 @@ h2 .n{background:#13314a!important;color:#5fd4ff!important}
 .tk li::before{background:#13314a!important;color:#5fd4ff!important}
 .art{grid-template-rows:auto 1fr}
 .a-side>.sh:first-child{margin-top:28px}
+/* clean tech accents */
+:root{--mono:ui-monospace,"SFMono-Regular","JetBrains Mono",Menlo,Consolas,monospace}
+.phead{background:radial-gradient(rgba(95,212,255,.10) 1px,transparent 1.2px) 0 0/22px 22px,#0b1322!important;border-bottom:1px solid #16324a!important}
+.phead::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,#5fd4ff 30%,#a99bff 70%,transparent);opacity:.7}
+.eyebrow,.crumb,.sh,.notice,.nw-m,.sc-top,.fcount,.htags i,.sc-tags i,.concl .cn,.tw-grid>div span,.tw-list>div span{font-family:var(--mono)!important}
+.eyebrow,.sh{letter-spacing:.12em!important}
+.notice{background:transparent!important;border:1px solid #2b5f80!important;color:#5fd4ff!important;border-radius:6px!important;font-weight:600!important}
+.notice::before{content:"> ";color:#a99bff}
+h2 .n{font-family:var(--mono)!important;background:transparent!important;border:1px solid #2b5f80;color:#5fd4ff!important;border-radius:4px!important;padding:5px 7px!important}
+.sh::before{content:"";width:6px;height:6px;border-radius:50%;background:#5fd4ff;flex:0 0 auto}
+.kpi b,.kn>div b,.stat-strip>div b{font-family:var(--mono)!important;font-weight:700!important;letter-spacing:-.02em}
+.kpi>div,.kn>div{position:relative}
+.kpi>div::before,.kn>div::before{content:"";position:absolute;left:-1px;top:-1px;width:14px;height:14px;border-left:2px solid #5fd4ff;border-top:2px solid #5fd4ff;border-top-left-radius:12px}
+.meta b,.tm,.sc-tm{font-family:var(--mono)!important}
+.tk li::before{font-family:var(--mono)!important;background:transparent!important;border:1px solid #2b5f80;border-radius:6px!important}
+.sc:hover,.nw:hover,.ag:hover{border-color:#5fd4ff!important}
+.chips button,.dayseg button{font-family:var(--mono)!important;font-weight:500!important;border-radius:6px!important}
+.side{border-right:1px solid #16324a}

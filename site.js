@@ -7,7 +7,7 @@
   const side = $("#side"), btn = $("#menuBtn");
   if (btn) btn.onclick = () => { const o = side.classList.toggle("open"); btn.setAttribute("aria-expanded", o); };
 
-  // 修正詞：點一下顯示逐字稿原文
+  // 修正詞：點一下顯示內容原文
   document.addEventListener("click", e => {
     const fx = e.target.closest(".fix"); if (fx) { fx.classList.toggle("show"); return; }
     const b = e.target.closest("[data-lb]"); if (!b) return;
@@ -18,7 +18,7 @@
   // 回到頂部
   const tt = $("#totop"); if (tt) { addEventListener("scroll", () => tt.classList.toggle("show", scrollY > 600), { passive: true }); tt.onclick = () => scrollTo({ top: 0 }); }
 
-  // 逐字稿內搜尋
+  // 內容內搜尋
   document.querySelectorAll("[data-filter]").forEach(inp => {
     const g = inp.dataset.filter, cnt = document.querySelector(`[data-count="${g}"]`), rows = [...inp.closest(".tx-body").querySelectorAll(".para")];
     inp.oninput = () => { const v = inp.value.trim().toLowerCase(); let k = 0;
@@ -26,7 +26,7 @@
       cnt.textContent = v ? `${k} 段符合` : ""; };
   });
 
-  // 段落連結：打開逐字稿並標示該段
+  // 段落連結：打開內容並標示該段
   function jump() {
     const id = decodeURIComponent(location.hash.slice(1)); if (!id) return;
     const el = document.getElementById(id); if (!el) return;

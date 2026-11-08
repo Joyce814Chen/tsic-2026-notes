@@ -727,3 +727,5 @@ h2{color:#f6f3ee!important;-webkit-text-fill-color:#f6f3ee!important;background:
 .toc .tm,.sc-tm,.nw-m{color:#c9bfa9!important}
 .qt span{color:#d9bf7c!important}
 p,li,dd,.bio,.ind-ov,.co p,.sc-q{color:var(--ink-2)}
+h2 .n::before{content:none!important}
+h2 .n{background:none!important;box-shadow:none!important;border:0!important;border-right:1px solid rgba(230,196,110,.45)!important;border-radius:0!important;padding:2px 14px 2px 0!important;margin-right:14px!important;font:600 15px/1 var(--hud,monospace)!important;letter-spacing:.06em!important;color:#e6c46e!important;-webkit-text-fill-color:#e6c46e!important}

@@ -703,3 +703,27 @@ img.au-av{display:block;object-fit:cover;padding:0;background:#111;border:1.5px 
 .au>.au-li{justify-self:stretch!important;text-align:center;padding:5px 0!important}
 .byline .au-li{display:inline-block;min-width:96px;text-align:center;padding:4px 0}
 @media (max-width:560px){.byline{gap:8px 10px}.byline .au-li{flex:1 1 calc(50% - 5px);margin:0!important;padding:6px 0}}
+
+/* ===== single-column reading + readable text ===== */
+:root{--ink:#ece8e0!important;--ink-2:#d2ccc0!important;--muted:#9e978a!important;--head:#f6f3ee!important}
+.art.one{display:block!important;max-width:860px;margin:6px auto 0}
+.art.one .a-main{width:100%}
+.wide:has(.art.one)>.pager{max-width:860px;margin-left:auto;margin-right:auto}
+.phead .wide:has(.crumb){max-width:860px;margin-left:auto;margin-right:auto;left:auto;transform:none}
+.sub{margin:4px 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;color:#a99c80}
+.a-main .card.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:18px 20px;margin-bottom:22px}
+.a-main .card.snap .speaker{align-items:flex-start}
+.a-main .card.snap>.bio{grid-column:1/-1;margin:0}
+.kn-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0 18px}
+.kn-row>div{padding:14px 16px}
+.kn-row b{font-size:22px!important}
+.kn-row span{display:block;margin-top:4px;font-size:13px;color:var(--ink-2)}
+.a-main .news{display:grid;gap:10px}
+/* gold only as accent: body copy & headings in light neutral */
+h2{color:#f6f3ee!important;-webkit-text-fill-color:#f6f3ee!important;background:none!important;text-shadow:none!important}
+.sc-tt,.co-h b,.ind-h b,.tk .pt,.concl b,.pos li b,.who b,.nw-t{color:#f6f3ee!important;-webkit-text-fill-color:#f6f3ee!important;background:none!important}
+.co-t i,.sc-tags i,.htags i,.htags a{color:#ddd6c8!important}
+.st.on i,.st.on b{color:#fff!important}
+.toc .tm,.sc-tm,.nw-m{color:#c9bfa9!important}
+.qt span{color:#d9bf7c!important}
+p,li,dd,.bio,.ind-ov,.co p,.sc-q{color:var(--ink-2)}

@@ -689,3 +689,12 @@ main h2:first-child,.a-main>h2:first-child{margin-top:8px!important}
 .au-li{flex:0 0 auto;margin-left:auto;font-size:12.5px;font-weight:600;color:#e6c46e!important;text-decoration:none!important;border:1px solid rgba(230,196,110,.35);border-radius:3px;padding:3px 8px}
 .au-li:hover{background:rgba(230,196,110,.12)}
 .byline .au-li{margin-left:4px}
+img.au-av{display:block;object-fit:cover;padding:0;background:#111;border:1.5px solid #e6c46e}
+.byline img.au-av{width:28px;height:28px}
+.au img.au-av{width:46px;height:46px}
+.au{display:grid!important;grid-template-columns:46px auto auto 1fr;column-gap:12px;row-gap:10px;align-items:center}
+.au>img.au-av{grid-row:1/3}
+.au>div{grid-column:2/5}
+.au>.au-li{margin:0!important;justify-self:start;grid-row:2}
+.byline{flex-wrap:wrap}
+.au-li{white-space:nowrap}.au>img.au-av{align-self:start}

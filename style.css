@@ -698,3 +698,8 @@ img.au-av{display:block;object-fit:cover;padding:0;background:#111;border:1.5px 
 .au>.au-li{margin:0!important;justify-self:start;grid-row:2}
 .byline{flex-wrap:wrap}
 .au-li{white-space:nowrap}.au>img.au-av{align-self:start}
+.au{grid-template-columns:46px 1fr 1fr!important}
+.au>div{grid-column:2/4!important}
+.au>.au-li{justify-self:stretch!important;text-align:center;padding:5px 0!important}
+.byline .au-li{display:inline-block;min-width:96px;text-align:center;padding:4px 0}
+@media (max-width:560px){.byline{gap:8px 10px}.byline .au-li{flex:1 1 calc(50% - 5px);margin:0!important;padding:6px 0}}

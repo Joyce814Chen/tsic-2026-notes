@@ -686,3 +686,6 @@ main h2:first-child,.a-main>h2:first-child{margin-top:8px!important}
 .byline .au-av{width:28px;height:28px;font-size:13px}
 .byline b{color:var(--head);margin-right:10px}
 .byline i{font-style:normal;font-size:12.5px;color:#a99c80;border:1px solid rgba(230,196,110,.25);border-radius:3px;padding:2px 8px}
+.au-li{flex:0 0 auto;margin-left:auto;font-size:12.5px;font-weight:600;color:#e6c46e!important;text-decoration:none!important;border:1px solid rgba(230,196,110,.35);border-radius:3px;padding:3px 8px}
+.au-li:hover{background:rgba(230,196,110,.12)}
+.byline .au-li{margin-left:4px}
